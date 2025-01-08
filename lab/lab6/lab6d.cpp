@@ -3,7 +3,7 @@
 /* #include<iostream>
 using namespace std;
 
-int fact(int n, int facts)  
+int fact(int n, int facts=1)  
 {
     if (n == 0) 
     {
@@ -34,8 +34,8 @@ int main()
 //b
 
 
-
-/* #include<iostream>
+/* 
+#include<iostream>
 using namespace std;
 
 int fibTailRecursive(int n, int a = 0, int b = 1)  {
@@ -43,13 +43,14 @@ int fibTailRecursive(int n, int a = 0, int b = 1)  {
     {
         return a;  
     }
-    if (n == 1)
+    else if (n == 1)
     {
         return b;  
     }
     
-    
+    else{
     return fibTailRecursive(n - 1, b, a + b);
+    }
 }
 
 int main()
@@ -58,7 +59,7 @@ int main()
     cout << "Enter the n: ";
     cin >> n;
 
-    r = fibTailRecursive(n);  
+    r = fibTailRecursive(n-1);  
     cout << "The Fibonacci number at position " << n << " is: " << r << endl;
     
     return 0;
@@ -77,9 +78,9 @@ int sums(int n, int sum=0)
     {
         return sum;
     }
-
+    else{
     return sums(n-1, sum+n);
-    
+    }
 }
 
 int main()
@@ -90,6 +91,6 @@ int main()
      r=sums(n);
     cout<<"The sum of "<<n<<" number is :"<<r<<endl;
     return 0;
-}
- */
+} */
+
 
