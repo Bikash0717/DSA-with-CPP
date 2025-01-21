@@ -12,7 +12,7 @@ node* avail = NULL;
 
 
 void create(int numNodes) {
-    node* temp = NULL;
+    
     for (int i = 0; i < numNodes; i++) {
         node* newNode = new node;  
         newNode->next = avail;  
