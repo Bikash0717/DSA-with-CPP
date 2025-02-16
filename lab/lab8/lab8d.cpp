@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-#define max 5
+
 
 class Sort
 {
@@ -53,7 +53,7 @@ class Sort
 
 int main()
 {
-int arr[]={4, 2, 3, 1, 5};
+int arr[]={7, 2, 8, 1, 5};
 Sort obj(arr,5);
 cout<<" Before sorting: ";
 obj.display();

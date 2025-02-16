@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-#define max 5
+
 
 class Sort
 {
@@ -16,7 +16,12 @@ class Sort
     {
         s[i]=arr[i];
     }
-    merge_sort(0,size-1);
+    
+    }
+
+    void sorting()
+    {
+        merge_sort(0,size-1); 
     }
 
     void merge_sort(int beg,int end)
@@ -90,8 +95,12 @@ void merge(int beg,int mid, int end)
 
 int main()
 {
-int arr[]={4, 2, 3, 1, 5};
+int arr[]={8, 6, 7, 1, 5};
 Sort obj(arr,5);
+cout<<" Before sorting: ";
+obj.display();
+
+obj.sorting();
 cout<<" After sorting: ";
 obj.display();
 }

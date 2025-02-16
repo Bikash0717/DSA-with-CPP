@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-#define max 5
+
 
 class Sort
 {
@@ -16,7 +16,12 @@ class Sort
     {
         s[i]=arr[i];
     }
-    quick_sort(0,size-1);
+    
+    }
+
+    void sorting()
+    {
+        quick_sort(0,size-1);
     }
 
     void quick_sort(int beg,int end)
@@ -70,6 +75,10 @@ int main()
 {
 int arr[]={4, 2, 3, 1, 5};
 Sort obj(arr,5);
+cout<<" Before sorting: ";
+obj.display();
+
+obj.sorting();
 cout<<" After sorting: ";
 obj.display();
 }

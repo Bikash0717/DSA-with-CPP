@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-#define max 5
+
 
 class Search
 {
@@ -43,6 +43,10 @@ class Search
 int main()
 {
 int arr[]={4, 2, 3, 1, 5};
+int key;
 Search obj(arr,5);
-obj.linear_Search(1);
+
+cout<<"Enter the value to search:";
+cin>>key;
+obj.linear_Search(key);
 }

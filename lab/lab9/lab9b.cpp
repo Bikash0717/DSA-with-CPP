@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-#define max 5
 
 class Search
 {
@@ -45,7 +44,7 @@ class Search
     }
     if(pos==-1)
         {
-            cout<<" The found is not found!"<<endl;
+            cout<<" The value is not found!"<<endl;
         }
     
     }
@@ -89,7 +88,13 @@ class Search
 int main()
 {
 int arr[]={1,2,5,7,8};
+int key1,key2;
 Search obj(arr,5);
-obj.binary_search_iterative(7);
-obj.binary_search_recursion(5);
+cout<<"Enter the value to search:";
+cin>>key1;
+obj.binary_search_iterative(key1);
+
+cout<<"Enter the value to search:";
+cin>>key2;
+obj.binary_search_recursion(key2);
 }
